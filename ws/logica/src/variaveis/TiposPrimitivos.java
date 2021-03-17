@@ -1,0 +1,70 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposPrimitivos {
+
+	public static void main(String[] args) {
+	
+	/*
+	 * Regras para identificadores
+	 * 1º não usarás palavras reservadas da linguagem(public);
+	 * 2º não começarás com números(1time);
+	 * 3º não utilizarás caracteres especiais
+	 * 
+	 * Padrões (Opcionais)
+	 * 1º Use nomes significativos ("nome" e não "x")
+	 * 2º Padrão CamelCase (segundaPalavra)
+	 * 3º Variaveis/metodos começam com minuscula
+	 * 4º Classes começa com letra maiscula
+	 */
+		
+		/*
+		*String time1 = "ABC";
+		*String time2 = "XPTO";
+		*double entrada = 100.0;
+		*int publico = 15000;
+		*double total = entrada*publico;
+		*System.out.printf("No jogo do %s x %s foi arrecadado R$ %.2f", time1 ,time2 ,total );
+		*/
+		
+		//JOptionPane é uma classe importada (Ctrl+Shift+O) adiciona ele no inicio
+		String time1 = JOptionPane.showInputDialog("Digite o time 1");
+		String time2 = JOptionPane.showInputDialog("Digite o time 2");
+		//Metodo só retorna string, metodo parseDouble remove o "" de uma string para virar double
+		double entrada = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da entrada"));
+		//Metodo para parsear integer
+		int publico = Integer.parseInt(JOptionPane.showInputDialog("Digite o publico"));
+		/* Classe Wrapper apoiam os tipos primitivos
+		 * boolean -> T or F
+		 * char	-> armazena somente o ASC ( o numero do caracter '127') 
+		 * ===========	
+		 * byte --> de -128 à 127
+		 * short --> de -32768 a 32768
+		 * int --> -2 trilhoes a 9 trilhões
+		 * long --> 9 quintilhôes
+		 * ===========
+		 * float --> pouca precisão (6 casas decimais)
+		 * double --> Dobro de precisão nas casas decimais
+		 */
+		
+		double total = entrada*publico;
+		System.out.printf("O total arrecadado foi de %.2f", total);
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
