@@ -1,0 +1,38 @@
+package br.com.caicai.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.caicai.modelo.Modelo;
+
+public class TesteModelo {
+	public static void main(String[] args) {
+		
+		Modelo elevador = new Modelo();
+		
+		elevador.pNome("BoxOne");
+		elevador.pMaxPessoas((byte)10);
+		elevador.pAndarMax((byte)10);
+		elevador.pAndarMin((byte)0);
+		
+		System.out.println(elevador.retornaTudo());
+		
+		elevador.pQntEntrar(Byte.parseByte(JOptionPane.showInputDialog("Quantidade de pessoas a entrar")));
+		
+		System.out.println(elevador.retornaQtde());
+		
+		/* Usar molde
+		public void acelerar(short velocidade) {
+			if (status==true && (velocidadeAtual+velocidade)<=velocidadeMaxima) {
+				velocidadeAtual+=velocidade;
+			}
+		}
+		*/
+		
+		
+		
+		
+		
+		
+	}
+
+}

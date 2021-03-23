@@ -1,0 +1,26 @@
+package br.com.exeheranca.implantacao;
+
+import br.com.exeheranca.modelo.Cliente;
+import util.Magica;
+
+public class TesteConta {
+	public static void main(String[] args) {
+		
+		Cliente cliente = new Cliente(
+				Magica.i("Entre com o ID: "),
+				Magica.s("Nome: "),
+				Magica.s("CPF:"),
+				Magica.s("Fone:")
+				);
+			
+		Conta conta = new Conta();
+		
+		if(Magica.b("Abrir conta corrente?")==true) {
+			conta = new Corrente ();
+		} else {
+			conta = new Poupanca ();
+		}
+		
+			
+	}
+}

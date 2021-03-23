@@ -1,0 +1,10 @@
+package br.com.projeto1.implantacao;
+
+public class Venda {
+
+	private int notaFiscal;
+	private float total;
+	private Cliente cliente;
+	private Produto produto;
+	
+}

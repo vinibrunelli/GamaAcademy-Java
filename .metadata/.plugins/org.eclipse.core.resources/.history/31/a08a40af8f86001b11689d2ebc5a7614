@@ -1,0 +1,50 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DoExemplo {
+	public static void main(String[] args) {
+		
+	/*
+	 * A variavel só é válida dentro do escopo em que foi criada {} 
+	 * por exemplo dentro das chaves do main
+	 * 
+	 *  ! Nunca criar uma variavel dentro do laço, 
+	 *  porque a cada vez que rodar o input vai alocar um novo espaço de memória
+	 */
+
+//precisamos iniciar a variavel com 0 pq é preciso criar a variavel fora
+		int numero1=0;
+		int numero2=0;
+		int resultado=0;
+		String operacao="";
+		String resp ="";
+	
+// Do while--> só é usado para fazer uma confirmação no final, tendo a certeza que rodou todos os argumentos 
+		do {
+			numero1 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o numero 1"));
+			numero2 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o numero 1"));
+			operacao = JOptionPane.showInputDialog("Entre com a operação:");
+			if (operacao.equals("+") == true) {
+				System.out.println("Resultado: " + (numero1 + numero2));				
+			}else if (operacao.equals("-")) {
+				System.out.println("Resultado: " + (numero1 - numero2));
+			}else if (operacao.equals("*")) {
+				System.out.println("Resultado: " + (numero1 * numero2));
+			}else if (operacao.equals("/")) {
+				System.out.println("Resultado: " + (numero1 / numero2));
+			}else {
+				System.out.println("Você não digitou um caracter permitido.");
+			}
+		resp =JOptionPane.showInputDialog("Deseja continuar?");
+		}while (resp.equals("S"));
+
+		
+		
+		
+		
+		
+		
+		
+	}
+}

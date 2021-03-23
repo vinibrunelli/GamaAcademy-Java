@@ -1,0 +1,44 @@
+package variaveis;
+
+public class TiposPrimitivos {
+
+	public static void main(String[] args) {
+	
+	/*
+	 * Regras para identificadores
+	 * 1º não usarás palavras reservadas da linguagem(public);
+	 * 2º não começarás com números(1time);
+	 * 3º não utilizarás caracteres especiais
+	 * 
+	 * Padrões (Opcionais)
+	 * 1º Use nomes significativos ("nome" e não "x")
+	 * 2º Padrão CamelCase (segundaPalavra)
+	 * 3º Variaveis/metodos começam com minuscula
+	 * 4º Classes começa com letra maiscula
+	 */
+		
+		
+		String time1 = "ABC";
+		String time2 = "XPTO";
+		double entrada = 100.0;
+		int publico = 15000;
+		double total = entrada*publico;
+		String.out.printf("No jogo do %time1 x %time2 foi arrecadado %.2f", time1,time2,total );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

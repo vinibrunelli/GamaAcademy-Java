@@ -1,0 +1,70 @@
+package br.com.gama.modelo;
+
+
+/*
+ Design pattern --> COnjunto de boas praticas para o desenvolvimento
+ 
+ -	DTO (Data transfer object)--> é um pattern que descreve melhores praticas
+ 
+ Regras:
+ -Todos os atributos devem ser privados;
+ -Cada atributo deve possuir individualmente um metodo input e outro output;
+ -
+ */
+
+
+public class Aluno {
+
+	//Atributos da classe
+		private String nome;
+		private int matricula;
+		private String email;
+		private String fone;
+		
+		
+		
+	@Override
+		public String toString() {
+			return "Aluno [nome=" + nome + ", matricula=" + matricula + ", email=" + email + ", fone=" + fone
+					+ ", getNome()=" + getNome() + ", getMatricula()=" + getMatricula() + ", getEmail()=" + getEmail()
+					+ ", getFone()=" + getFone() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+					+ ", toString()=" + super.toString() + "]";
+		}
+
+		// Métodos da classe
+		public String getNome() {
+			return nome;
+		}
+
+		public void setNome(String nome) {
+			this.nome = nome;
+		}
+
+		public int getMatricula() {
+			return matricula;
+		}
+
+		public void setMatricula(int matricula) {
+			this.matricula = matricula;
+		}
+
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getFone() {
+			return fone;
+		}
+
+		public void setFone(String fone) {
+			this.fone = fone;
+		}
+
+
+		
+		
+}

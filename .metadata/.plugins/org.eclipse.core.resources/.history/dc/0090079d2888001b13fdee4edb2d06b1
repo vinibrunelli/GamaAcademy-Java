@@ -1,0 +1,106 @@
+package br.com.gama.implementacao;
+
+import br.com.gama.modelo.Aluno;
+import br.com.gama.modelo.Curso;
+import br.com.gama.modelo.Endereco;
+import br.com.gama.modelo.Professor;
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		
+		
+		Endereco endereco = new Endereco();
+		endereco.setLogradouro("Avenida Itaquera");
+		endereco.setNumero("998");
+		endereco.setComplemento("Torre 2");
+		endereco.setBairro("Itaquera");
+		endereco.setCidade("Avenida Itaquera");
+		endereco.setUf("SP");
+		endereco.setLogradouro("03244-030");
+
+//----------------- TESTE  Aluno 1 ----------------------//		
+		
+		
+		//Instanciando um objeto --> importanto as classes do modelo
+		Aluno aluno = new Aluno();
+		
+		aluno.setEndereco(endereco);
+		
+		aluno.setEmail("vinibrunelli@gmail.com");
+		aluno.setFone("967996691");
+		aluno.setNome("Vinicius");
+		aluno.setMatricula((Integer)2008138270);
+				
+		System.out.println("Nome: " +aluno.getNome());
+		System.out.println("Matricula: " +aluno.getMatricula());
+		System.out.println("Email: " +aluno.getEmail());
+		System.out.println("Fone: " +aluno.getFone());
+		System.out.println("Endereço: " +aluno.getEndereco());
+		System.out.println("\n");
+
+			
+//----------------- TESTE  Aluno 2 ----------------------//	
+	
+		Aluno aluno2 = new Aluno();
+		/* As linhas estão quebradas mas estao no mesmo (,,,,) separados por virgula
+		
+		aluno2.setAll(
+				endereco,
+				JOptionPane.showInputDialog("Nome2:").toUpperCase(),
+				Integer.parseInt(JOptionPane.showInputDialog("Matricula").toUpperCase()),
+				JOptionPane.showInputDialog("Email 2:").toUpperCase(),
+				JOptionPane.showInputDialog("Telefone 2:").toUpperCase()
+				);
+		*/
+		
+		aluno2.setAll(endereco,"Skalete:",2009,"ska@gmail.com:","962982871:");
+	
+		System.out.println(aluno2.toString());
+		System.out.println("\n");
+
+		
+	// O FrontEnd que encontrar só o bairro e cidade do Aluno
+		System.out.println("Bairro" + aluno.getEndereco().getBairro());
+		System.out.println("Cidade" + aluno.getEndereco().getCidade());
+		System.out.println("\n");
+
+		
+//----------------- TESTE  PROFESSOR ----------------------//
+
+		
+		
+		Professor professor = new Professor ();
+		
+		Endereco enderecoProfessor = new Endereco();
+		enderecoProfessor.setLogradouro("Rua 1");
+		enderecoProfessor.setNumero("998");
+		enderecoProfessor.setComplemento("Frente");
+		enderecoProfessor.setBairro("Pimentas");
+		enderecoProfessor.setCidade("Guarulhos");
+		enderecoProfessor.setUf("SP");
+		enderecoProfessor.setLogradouro("03244-030");
+		
+		professor.setNome("Humberto");
+		professor.setFormacao("Java");
+		professor.setEndereco(enderecoProfessor);
+		
+		System.out.println(professor.getResumo());
+
+
+		
+//----------------- TESTE  CURSO ----------------------//
+		
+		
+		Curso curso = new Curso ();
+		
+		curso.setSigla("JV");
+		curso.setDescricao("Java");
+		curso.setAtivo==True;
+		
+		
+		
+		
+		
+}
+}

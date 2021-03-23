@@ -1,0 +1,27 @@
+package br.com.caicai.teste;
+
+import br.com.caicai.modelo.Modelo;
+
+public class TesteModelo {
+	public static void main(String[] args) {
+		
+		Modelo elevador = new Modelo();
+		
+		elevador.pNome("vini");
+		
+		System.out.println(elevador.retornaNome());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,51 @@
+package br.com.rubinhocar.modelo;
+
+public class Veiculo {
+	
+	private String montadora;
+	private float valor;
+	private short velocidadeAtual;
+	private boolean status;
+	private short velocidadeMaxima;
+	private String modelo;
+	
+	/* Escreve na variável através de um método
+	usa o void pq nao precisa mostrar msg nenhuma que escreveu
+	*/
+	
+	public void preencherBasico (boolean pStatus, short pVelocidadeMaxima) {
+		status= pStatus;
+		velocidadeMaxima = pVelocidadeMaxima;
+	}
+	
+	public float retornarValor () {
+		return valor;
+	}
+	public void preencherValor(float param) {
+		if (param>0) {
+			valor = Float.parseFloat(param);
+		}
+	}
+	
+	public String retornaModelo () {
+		return modelo;
+	}
+	
+	public void preencherModelo (String param) {
+		modelo = param.toUpperCase();
+	}
+	
+	
+	public String retornaMontadora () {
+		return montadora;
+		}
+	
+	
+	public void preencherMontadora (String param) {
+		montadora = param.toUpperCase();
+	}
+
+
+	
+	
+}

@@ -1,0 +1,36 @@
+package br.com.gama.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.gama.modelo.Aluno;
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+	
+		//Instanciando um objeto --> importanto as classes do modelo
+		Aluno aluno = new Aluno();
+		
+		aluno.setEmail(JOptionPane.showInputDialog("E-mail:"));
+		aluno.setFone(JOptionPane.showInputDialog("Fone:"));
+		aluno.setNome(JOptionPane.showInputDialog("Nome:"));
+		aluno.setMatricula(Integer.parseInt(JOptionPane.showInputDialog("Matricula:")));
+				
+		System.out.println("Nome:" +aluno.getNome());
+		System.out.println(aluno.getMatricula());
+		System.out.println(aluno.getEmail());
+		System.out.println(aluno.getFone());
+	
+	
+		Aluno aluno2 = new Aluno();
+		// As linhas estão quebradas mas estao no mesmo (,,,,) separados por virgula
+		aluno2.setAll(
+				JOptionPane.showInputDialog("Nome2:").toUpperCase(),
+				Integer.parseInt(JOptionPane.showInputDialog("Matricula").toUpperCase()),
+				JOptionPane.showInputDialog("Email 2:").toUpperCase(),
+				JOptionPane.showInputDialog("Telefone 2:").toUpperCase()
+				);
+	
+		System.out.println(aluno2.toString());
+}
+}

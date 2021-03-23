@@ -1,0 +1,16 @@
+package br.com.gama.modelo;
+
+
+/*
+ Design pattern --> COnjunto de boas praticas para o desenvolvimento
+ */
+public class Aluno {
+
+		private String nome;
+		private int matricula;
+		private String email;
+		private String fone;
+		
+		
+		
+}

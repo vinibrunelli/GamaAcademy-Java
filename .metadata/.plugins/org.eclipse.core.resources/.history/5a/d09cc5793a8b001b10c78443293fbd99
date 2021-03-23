@@ -1,0 +1,17 @@
+package br.com.projeto1.modelo;
+
+public class PessoaFisica extends Cliente{
+	
+	private String cpf;
+	private String rg;
+	
+//========== TO STRING ========== //	
+
+	@Override
+	public String toString() {
+		return "PessoaFisica [cpf=" + cpf + ", rg=" + rg + super.toString() + "]";
+	}
+
+	
+	
+}

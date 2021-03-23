@@ -1,0 +1,38 @@
+package br.com.caicai.modelo;
+
+public class Modelo {
+
+		String nome="";
+		Byte maximoPessoas=0;
+		Byte andarMaximo=0;
+		Byte andarMinimo=0;
+		Byte andarAtual=0;
+		Byte qtdePessoas=0;
+		
+		public void pNome (String param) {
+			nome =param;
+		}
+		public void pMaxPessoas (byte param) {
+			maximoPessoas =param;
+		}
+		public void pAndarMax (byte param) {
+			andarMaximo =param;
+		}
+		public void pAndarMin (byte param) {
+			andarMinimo =param;
+		}
+		
+//_______________________________________________________________________
+		
+		public String retornaNome() {
+			return nome;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+}

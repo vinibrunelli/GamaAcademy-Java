@@ -1,0 +1,14 @@
+package br.com.projeto1.implementacao;
+
+import br.com.projeto1.modelo.Produto;
+
+public class Teste1 {
+	public static void main(String[] args) {
+		
+		
+		Produto produto = new Produto(
+				1,"Mouse","HP","50","30",10
+				);
+	
+	}
+}

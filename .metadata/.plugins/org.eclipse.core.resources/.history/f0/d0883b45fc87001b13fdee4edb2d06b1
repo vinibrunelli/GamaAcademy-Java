@@ -1,0 +1,36 @@
+package br.com.caicai.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.caicai.modelo.Modelo;
+
+public class TesteModelo {
+	public static void main(String[] args) {
+		
+		Modelo objeto = new Modelo();
+		
+		//criar o objeto
+		//Elevador teste;
+		//teste.entrar((byte)5);
+		
+		//instanciar o objetoS
+		
+		objeto.inicializar("TorreB", (byte) 20, (byte) 10, (byte) 0); 
+		objeto.subir();
+		objeto.subir();
+		objeto.entrar((byte) 5);
+		System.out.println(objeto.toString());
+		objeto.descer();
+		objeto.sair( (byte) 2);
+		objeto.descer();
+		objeto.descer();
+		objet.entrar();
+		System.out.println(objeto.toString());
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package br.com.gama.implementacao;
+
+import br.com.gama.modelo.Turma;
+
+public class TesteTurma2 {
+
+	public static void main(String[] args) {
+		Turma turma = new Turma (
+			
+				
+				);
+		
+	}
+}

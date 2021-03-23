@@ -1,0 +1,9 @@
+package br.com.gama.implementacao;
+
+public class TesteTurma2 {
+
+	public static void main(String[] args) {
+		Turma turma = new Turma ();
+		
+	}
+}

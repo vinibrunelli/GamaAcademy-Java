@@ -1,0 +1,11 @@
+package br.com.exeheranca.modelo;
+
+public class Corrente extends Conta{
+
+		private float limite;
+		private float taxa;
+		
+		
+		
+		
+}

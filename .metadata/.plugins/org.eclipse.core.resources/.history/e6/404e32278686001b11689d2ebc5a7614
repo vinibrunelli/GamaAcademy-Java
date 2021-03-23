@@ -1,0 +1,23 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class WhileExemplo {
+	public static void main(String[] args) {
+		
+		String email = JOptionPane.showInputDialog("Entre com seu e-mail:");
+		
+		while (email.contains("@") == false) {
+			 email = JOptionPane.showInputDialog("Entre com seu e-mail com @:");
+		}
+		System.out.println("Seu usuário é" + email.substring(0,email.indexOf("@")));
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

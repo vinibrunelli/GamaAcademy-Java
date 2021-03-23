@@ -1,0 +1,36 @@
+package br.com.exeheranca.modelo;
+
+public class Poupanca extends Conta {
+	
+	private float redimento;
+
+
+	public Poupanca(short numero, byte digito, short agencia, float saldo, Cliente cliente, float redimento) {
+		super(numero, digito, agencia, saldo, cliente);
+		this.redimento = redimento;
+	}
+
+	
+	public Poupanca() {
+		super();
+	}
+
+
+	public float getRedimento() {
+		return redimento;
+	}
+
+	public void setRedimento(float redimento) {
+		this.redimento = redimento;
+	}
+
+	@Override
+	public String toString() {
+		return "Poupanca [redimento=" + redimento + super.toString() +"]";
+	}
+	
+	public void creditarRendimentos(float rendimento) {
+		super.setSaldo(getSaldo()*rendimento);
+	}
+
+}

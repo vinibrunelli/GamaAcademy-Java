@@ -1,0 +1,56 @@
+package br.com.gama.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.gama.modelo.Aluno;
+import br.com.gama.modelo.Endereco;
+
+public class TesteAluno {
+
+	public static void main(String[] args) {
+		
+		
+		Endereco endereco = new Endereco();
+		endereco.setLogradouro("Avenida Itaquera");
+		endereco.setNumero("998");
+		endereco.setComplemento("Torre 2");
+		endereco.setBairro("Itaquera");
+		endereco.setCidade("Avenida Itaquera");
+		endereco.setUf("SP");
+		endereco.setLogradouro("03244-030");
+	
+		//Instanciando um objeto --> importanto as classes do modelo
+		Aluno aluno = new Aluno();
+		
+		aluno.setEndereco(endereco);
+		
+		aluno.setEmail(JOptionPane.showInputDialog("E-mail:"));
+		aluno.setFone(JOptionPane.showInputDialog("Fone:"));
+		aluno.setNome(JOptionPane.showInputDialog("Nome:"));
+		aluno.setMatricula(Integer.parseInt(JOptionPane.showInputDialog("Matricula:")));
+				
+		System.out.println("Nome: " +aluno.getNome());
+		System.out.println("Matricula: " +aluno.getMatricula());
+		System.out.println("Email: " +aluno.getEmail());
+		System.out.println("Fone: " +aluno.getFone());
+		System.out.println("Endereço: " +aluno.getEndereco());
+
+	
+	
+		Aluno aluno2 = new Aluno();
+		// As linhas estão quebradas mas estao no mesmo (,,,,) separados por virgula
+		aluno2.setAll(
+				endereco,
+				JOptionPane.showInputDialog("Nome2:").toUpperCase(),
+				Integer.parseInt(JOptionPane.showInputDialog("Matricula").toUpperCase()),
+				JOptionPane.showInputDialog("Email 2:").toUpperCase(),
+				JOptionPane.showInputDialog("Telefone 2:").toUpperCase()
+				);
+	
+		System.out.println(aluno2.toString());
+		
+	// O FrontEnd que encontrar só o bairro e cidade do Aluno
+		System.out.println("Bairro" + aluno.getEndereco().getBairro());
+		System.out.println("Cidade" + aluno.getEndereco().getCidade());
+}
+}

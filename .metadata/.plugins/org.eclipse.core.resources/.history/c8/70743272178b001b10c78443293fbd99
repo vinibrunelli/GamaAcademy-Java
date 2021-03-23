@@ -1,0 +1,47 @@
+package br.com.gama.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.gama.modelo.Aluno;
+import br.com.gama.modelo.Curso;
+import br.com.gama.modelo.Endereco;
+import br.com.gama.modelo.Professor;
+import br.com.gama.modelo.Turma;
+
+public class TesteTurma2 {
+	
+
+
+	public static void main(String[] args) {
+		Turma turma = new Turma (
+		"Dev",
+		"Vespertino",
+		new Curso(
+			"Dev",
+			"Java",
+			true,
+			1000,
+			(byte)6
+			),
+		new Aluno(
+				"Rodrigo",
+				2000988,
+				"rodrigo@rodrigo",
+				"24511325",
+				new Endereco(
+				"Rua erva imperial",
+				(byte)149,
+				"Ap84",
+				"Vila Alpina",
+				"Sao Paulo",
+				"sp",
+				"03244-030"
+				)
+				),
+		new Professor()
+				
+				);
+		
+		System.out.println(turma.toString());
+	}
+}

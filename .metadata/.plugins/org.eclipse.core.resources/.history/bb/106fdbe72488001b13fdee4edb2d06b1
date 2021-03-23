@@ -1,0 +1,47 @@
+package br.com.gama.modelo;
+
+public class Curso {
+	
+	private String sigla;
+	private String descricao;
+	private Boolean ativo;
+	private Float valor;
+	private byte duracao;
+	
+/* ---------- Getters and Setters ----------*/
+	public String getSigla() {
+		return sigla;
+	}
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public Boolean getAtivo() {
+		return ativo;
+	}
+	public void setAtivo(Boolean ativo) {
+		this.ativo = ativo;
+	}
+	public Float getValor() {
+		return valor;
+	}
+	public void setValor(Float valor) {
+		this.valor = valor;
+	}
+	public byte getDuracao() {
+		return duracao;
+	}
+	public void setDuracao(byte duracao) {
+		this.duracao = duracao;
+	}
+	/* ---------- Aplicar porcentagem no valor ----------*/	
+	
+	public void atualizarValor (byte porcentagem) {
+		Float valorAtualizado = this.valor*porcentagem;
+	}
+}

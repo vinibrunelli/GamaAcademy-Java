@@ -1,0 +1,76 @@
+package br.com.projeto1.modelo;
+
+public class Produto {
+
+	private int id;
+	private String descricao;
+	private String fabricante;
+	private float valorVenda;
+	private float valorCompra;
+	private int qtde;
+	
+// ---------- Getters and setters ----------//
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public String getFabricante() {
+		return fabricante;
+	}
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	public int getQtde() {
+		return qtde;
+	}
+	public void setQtde(int qtde) {
+		this.qtde = qtde;
+	}
+	
+	// ---------- CONSTRUTOR CHEIO ----------//
+
+	public Produto(int id, String descricao, String fabricante, float valorVenda, float valorCompra, int qtde) {
+		super();
+		this.id = id;
+		this.descricao = descricao;
+		this.fabricante = fabricante;
+		this.valorVenda = valorVenda;
+		this.valorCompra = valorCompra;
+		this.qtde = qtde;
+	}
+	
+// ---------- CONSTRUTOR VAZIO ----------//
+	public Produto() {
+		super();
+	}
+	
+// ---------- MÉTODO TRAZER O VALOR TOTAL POR PRODUTOS COM PREÇO DE VENDA ----------//
+	public String totalEstoqueVenda() {
+		public float totalValorVenda;
+		totalValorVenda = valorVenda*qtde;
+		return totalValorVenda;
+	}
+	
+	
+}
+

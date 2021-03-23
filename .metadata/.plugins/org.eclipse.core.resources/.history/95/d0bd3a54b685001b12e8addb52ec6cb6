@@ -1,0 +1,69 @@
+package variaveis;
+
+public class TiposDados {
+	/*
+	 * Tipos de dados:
+	 * 
+	 * Alfanuméricos:
+	 * 		Não não utilizado em calculo matemático
+	 * 		- String --> (Javanês)
+	 * 
+	 * Numéricos:
+	 *		Utilizado em calculos matemáticos
+	 *		
+	 *		- double --> Com casas decimais 
+	 *		- int --> Sem casas decimais 
+	 *
+	 *O processamento do numerico é muito mais rapido 
+	 *pq só vai de "0-9.,-", enquanto alfa pode ser qlqr coisa
+	 *
+	 *
+	 *<tipo> <nome> = <valor>
+	 */
+
+//Metodo main --> Significa que deve ser executado
+// toda aplicação deve ter no minimo 1 main (start point da app)
+//args é a unica palavra que pode ser diferente
+// Digitar "main" e Ctrl+space+enter --> cria sozinho o main	
+	
+	public static void main(String[] args) {
+//		System.out.print("Olá mundo!!!");
+		
+		String nome = "Vinicius";
+		int idade = 30;
+		double altura = 1.71;
+		double peso = 70;
+		
+		
+		System.out.println("Nome..: "+ nome );
+		System.out.println("Idade.: "+idade);
+		System.out.print("Altura: "+altura);
+		System.out.print("Sem pular linha: "+altura);
+		System.out.print("Tudão"+nome+idade+altura+peso);
+	}
+
+	
+	
+	
+	
+	
+/*Alto nível + proxima da linguagem humana
+*	
+*Paradigma - POO (Programacao Orientada a objetos) ou Estruturada
+* Estruturada C , Cobol, clipper, basic
+* POO --> Java, Python
+*/
+	
+	
+	/* Siglas do Java
+	 * 
+	 * JDK --> Java Development kit - Ferramentas p/ o dev
+	 * JRE --> Java Runtime Environment - Responsavel por executar td aplicação(JVM ta dentro)
+	 * JVM --> Java Virtual machine --> Responsavel por rodar em qlqr plataforma ( Portabilidade)
+	 */
+	
+
+
+
+
+}

@@ -1,0 +1,62 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DoExemplo {
+	public static void main(String[] args) {
+
+
+		/*
+ O Jogador 1 vai colocar o numro e o jogador 2 vai ter que acertar o numero
+  -Missão 1 -> De dicas (alto ou baixo)
+  -Missão 2 -> acrescentar na msg parabens, qnts tentativas ate acerto
+
+  Dica vai ter que ter uma variavel para contar
+		 */
+		int player1 = Integer.parseInt(JOptionPane.showInputDialog("Player 1 \nEntre com um numero"));
+		int player2 = Integer.parseInt(JOptionPane.showInputDialog("Player 2 \nAdvinhe o numero"));
+		int tentativa =0;
+
+		while (player1 != player2) {
+			tentativa = tentativa + 1 ;
+			if (player2>player1) {
+				System.out.println("Chute mais baixo");
+			}else {
+				System.out.println("Chute mais alto");
+			}
+		}
+		if (player2 == player1) {
+		System.out.println("Parabésn você acertou!" + tentativa);
+		
+		int resultado=0;
+		String operacao="";
+		String resp ="";
+
+		/* *
+		do {
+			numero1 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o numero 1"));
+			numero2 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o numero 1"));
+			operacao = JOptionPane.showInputDialog("Entre com a operação:");
+			if (operacao.equals("+") == true) {
+				System.out.println("Resultado: " + (numero1 + numero2));				
+			}else if (operacao.equals("-")) {
+				System.out.println("Resultado: " + (numero1 - numero2));
+			}else if (operacao.equals("*")) {
+				System.out.println("Resultado: " + (numero1 * numero2));
+			}else if (operacao.equals("/")) {
+				System.out.println("Resultado: " + (numero1 / numero2));
+			}else {
+				System.out.println("Você não digitou um caracter permitido.");
+			}
+		resp =JOptionPane.showInputDialog("Deseja continuar?");
+		}while (resp.equals("S"));
+		 */
+
+
+
+
+
+
+
+	}
+}
